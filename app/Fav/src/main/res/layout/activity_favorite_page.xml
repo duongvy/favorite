@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="10"
+    android:background="#1B1E28"
+    android:orientation="vertical"
+    tools:context=".FavoritePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFavorite"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+            android:onClick="combackToHome"
+            android:text="Favorite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FavoriteContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lvFavoriteSong"
+            android:layout_width="match_parent"
+            android:layout_height="612dp"
+            android:layout_marginTop="20dp"
+            android:background="#1B1E28"
+            android:scrollbars="vertical"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

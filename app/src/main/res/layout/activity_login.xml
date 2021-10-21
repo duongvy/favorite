@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151720"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Welcome back!"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/boder_edit_text"
+        android:hint="  Email Address"
+        android:inputType="textEmailAddress"
+        android:textColor="#707790"
+        android:textColorHint="#707790" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/boder_edit_text"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:textColor="#707790"
+        android:textColorHint="#707790" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageViewForgotPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/boder_edit_text"
+        android:text="Login" />
+
+    <ImageButton
+        android:id="@+id/imageViewForgotPassword"
+        android:layout_width="113dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:background="@null"
+        android:src="@drawable/forgotpassword"
+        android:text="Skip"
+        android:textColor="#16A7FF"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageViewDontAccount"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/donaccount" />
+
+</RelativeLayout>
